@@ -1,7 +1,7 @@
 allure-vstest-logger
 ====================
 
-[![Build status](https://ci.appveyor.com/api/projects/status/vf02d3xkthwcxxtc/branch/master?svg=true)](https://ci.appveyor.com/project/someuser77/allure-vstest-logger/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/mh1cq0ubr498d92a?svg=true)](https://ci.appveyor.com/project/arpitgold/allure-vstest-logger)
 
 This is a logger for the vstest.console.exe that generates an [allure](https://github.com/allure-framework) compatible xml using the [allure-csharp-commons](https://github.com/allure-framework/allure-csharp-commons).
 
