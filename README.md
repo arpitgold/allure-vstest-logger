@@ -39,6 +39,22 @@ If you want the output to be written to another location other than the current 
 vstest.console.exe /logger:Allure;ResultsPath=<some dir> <test dll>.dll
 ```
 
+
+If you would like to use another logger in conjunction with the Allure you can use the MulticastLogger!
+
+Simply comma separate the loggers in loggers parameter, if any of the loggers have parameters you can use LoggerName.ParameterName to set the ParameterName parameter. For example:
+
+```
+vstest.console.exe tests.dll /logger:Multicast;loggers=Allure,trx,TfsPublisher;TfsPublisher.Collection=<team project url>;TfsPublisher.BuildName=<build name>;TfsPublisher.TeamProject=<team project name>;
+```
+
+You may also alias loggers, then you can set parameters on the aliases:
+
+```
+vstest.console.exe tests.dll /logger:Multicast;logger1=Allure;logger2=trx;logger3=TfsPublisher;logger3.Collection=<team project url>;logger3.BuildName=<build name>;logger3.TeamProject=<team project name>;
+```
+
+
 Compiling
 =========
 Make sure you have a reference to Microsoft.VisualStudio.TestPlatform.ObjectModel.dll from:
