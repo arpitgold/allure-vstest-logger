@@ -1,9 +1,8 @@
 ﻿using System;
-using AllureCSharpCommons.Events;
 using AllureCSharpCommons.AllureModel;
-using VSTestAllureTestLogger;
+using AllureCSharpCommons.Events;
 
-namespace VSTestAllureTestLogger.Events
+namespace VSTestAllureTestLogger.AllureEvents
 {
     public class TestCaseFailureWithErrorInfoEvent : TestCaseFailureEvent
     {

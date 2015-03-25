@@ -1,8 +1,7 @@
 ﻿using System;
 using AllureCSharpCommons.Events;
-using VSTestAllureTestLogger;
 
-namespace VSTestAllureTestLogger.Events
+namespace VSTestAllureTestLogger.AllureEvents
 {
     public class TestCaseFinishedWithTimeEvent : TestCaseFinishedEvent
     {

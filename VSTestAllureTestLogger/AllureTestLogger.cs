@@ -10,7 +10,7 @@ using System.IO;
 using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AllureCSharpCommons;
-using VSTestAllureTestLogger.Events;
+using VSTestAllureTestLogger.AllureEvents;
 
 namespace VSTestAllureTestLogger
 {
